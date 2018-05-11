@@ -16,15 +16,14 @@
 #shop, #cart {
   display: flex;
   flex-direction: column;
-  width: 100;
+  width: 50%;
   margin: 0 auto;
   text-align: center;
   text-transform: uppercase;
 }
 
-
 main, aside {
-  width: 50%;
+  width: 100%;
 }
 
 main {
@@ -33,20 +32,86 @@ main {
 
 aside {
   float: right;
+
 }
 
-/* FOOD CATEGORIES */
+/* FOOD LIST/CATEGORIES */
 
+nav {
+}
 ul {
+  display: flex;
+  flex-direction: row;
   list-style-type: none;
-}
-
-nav ul {
-  position: inline-block;
-  text-align: center;
+  width: 100%;
+  margin: 0 auto;
+  padding: 0 .5em;
 }
 
 a {
   text-decoration: none;
   color: black;
+  width: 20%;
+  font-size: 1em;
 }
+
+a:hover {
+  font-size: 1.6em;
+}
+
+/*FRUIT*/
+
+#fruit {
+  width: 100%;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  background-color: purple;
+}
+
+.firstCol, .secondCol, .thirdCol {
+  text-align: center;
+  width: 100%;
+}
+
+.firstCol {
+  align-items: center;
+  float: left;
+}
+
+.thirdCol {
+  float: right;
+}
+
+img {
+  text-align: center;
+  width: 40%;
+  background: pink;
+  border: .5px solid red;
+  height: 110px;
+  padding: .5em;
+}
+
+img:hover {
+  opacity: .8;
+  position: relative;
+}
+
+h4 {
+  color: white;
+  margin: 0 auto;
+  position: absolute;
+  z-index: ;
+  bottom: 0;
+}
+
+
+
+
+
+
+
+
+
+
+

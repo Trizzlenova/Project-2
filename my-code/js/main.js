@@ -1,4 +1,6 @@
-// AMBIENT STORE MUSIC WAV
+// ambient store music
 
+// mouseenter on each category which
+// will display that list/img (forlo?)
 
-console.log("hello!")
+//drag img element into shopping cart
