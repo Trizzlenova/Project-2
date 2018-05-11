@@ -1,0 +1,52 @@
+/* STARTER CODE */
+
+* {
+  box-sizing: border-box;
+  border: 1px solid purple;
+}
+
+.clearfix:after {
+  display: table;
+  clear: both;
+  content: "";
+}
+
+/* BODY */
+
+#shop, #cart {
+  display: flex;
+  flex-direction: column;
+  width: 100;
+  margin: 0 auto;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+
+main, aside {
+  width: 50%;
+}
+
+main {
+  float: left;
+}
+
+aside {
+  float: right;
+}
+
+/* FOOD CATEGORIES */
+
+ul {
+  list-style-type: none;
+}
+
+nav ul {
+  position: inline-block;
+  text-align: center;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}
