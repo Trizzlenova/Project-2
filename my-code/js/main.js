@@ -16,8 +16,7 @@ var cart = document.getElementById('cart');
     meat = document.getElementById('meat'),
     meatContainer = document.getElementById('meatContainer'),
     images = document.getElementsByTagName('img'),
-    ul = document.createElement('ul'),
-    newUl = document.getElementsByTagName('ul')[0];
+    ul = document.createElement('ul');
 
 var shoppingItems = [fruit, veggies, meat];
 
@@ -45,26 +44,11 @@ for(var i = 0; i < shoppingItems.length; i++) {
 // Add item(s) to the shopping cart
 for(var j = 0; j < images.length; j++) {
   images[j].addEventListener('click', function(){
-    cart.append(event.currentTarget.id);
+    var newLine = document.createElement('p')
+    newLine.innerText = event.currentTarget.id;
+    cart.append(newLine)
   });
-  // ul.append(shoppingCart);
-  // cart.append(shoppingCart);
-  // li.value = shoppingCart.setAttribute(li)
 }
-
-// var favoriteWebsite = document.getElementById("favorite-website");
-// var link = document.createElement('a');
-// var text = document.createTextNode("find out here!");
-// var web = prompt("What is your favorite website? (Don't forget to add http://)");
-
-
-
-// link.setAttribute('href', web);
-// link.appendChild(text);
-// favoriteWebsite.appendChild(link);
-
-
-
 
 
 

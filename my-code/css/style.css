@@ -13,13 +13,34 @@
 
 /* BODY */
 
+body {
+  font-family: 'Concert One';
+}
+
+h2 {
+  font-size: 4em;
+}
+
+p {
+  font-size: 2em;
+}
+
 #shop, #list {
   display: flex;
   flex-direction: column;
-  width: 50%;
   margin: 0 auto;
   text-align: center;
   text-transform: uppercase;
+}
+
+#shop {
+  width: 75%;
+  background-color: #b3ffe1;
+}
+
+#list {
+  width: 25%;
+  background-color: #bbb5f4;
 }
 
 main, aside {
@@ -38,9 +59,8 @@ aside {
 
 /* FOOD LIST/CATEGORIES */
 
-nav {
 
-}
+
 ul {
   display: flex;
   flex-direction: row;
@@ -50,7 +70,8 @@ ul {
 }
 
 li {
-  padding: 0 2em;
+  padding: 1em 3em 1em 3.5em;
+  font-size: 1.5em;
 }
 
 a {
@@ -90,7 +111,7 @@ img {
   width: 40%;
   background: pink;
   border: .5px solid red;
-  height: 110px;
+  height: 20em;
   padding: .5em;
 }
 
