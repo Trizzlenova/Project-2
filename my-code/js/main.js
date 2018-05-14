@@ -1,5 +1,8 @@
-// ambient store music:
-var audio = new Audio('audio/market.mp3');
+// // ambient store music:
+// var audio = new Audio('audio/market.mp3');
+// window.onload = function(){
+//   document.getElementById('playAudio').play();
+// }
 
 // Empty Shopping Cart
 var shoppingCart = [];
@@ -12,7 +15,9 @@ var cart = document.getElementById('cart');
     veggieContainer = document.getElementById('veggieContainer'),
     meat = document.getElementById('meat'),
     meatContainer = document.getElementById('meatContainer'),
-    images = document.getElementsByTagName('img');
+    images = document.getElementsByTagName('img'),
+    ul = document.createElement('ul'),
+    newUl = document.getElementsByTagName('ul')[0];
 
 var shoppingItems = [fruit, veggies, meat];
 
@@ -36,15 +41,50 @@ for(var i = 0; i < shoppingItems.length; i++) {
   });
 }
 
+
 // Add item(s) to the shopping cart
-function addToCart(list){
-  for(var j = 0; j < images.length; j++) {
-    images[j].addEventListener('click', function(){
-      list.push(event.currentTarget.id);
-    });
+for(var j = 0; j < images.length; j++) {
+  images[j].addEventListener('click', function(){
+    cart.append(event.currentTarget.id);
+  });
+  // ul.append(shoppingCart);
+  // cart.append(shoppingCart);
+  // li.value = shoppingCart.setAttribute(li)
+}
 
-  }
+// var favoriteWebsite = document.getElementById("favorite-website");
+// var link = document.createElement('a');
+// var text = document.createTextNode("find out here!");
+// var web = prompt("What is your favorite website? (Don't forget to add http://)");
 
-cart.innerHTML = shoppingCart;
+
+
+// link.setAttribute('href', web);
+// link.appendChild(text);
+// favoriteWebsite.appendChild(link);
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
