@@ -1,5 +1,5 @@
 // // ambient store music:
-var audio = new Audio('audio/market.mp3');
+// var audio = new Audio('audio/market.mp3');
 
 // Grabbing all the Elements:
 var cart = document.getElementById('cart');
@@ -39,7 +39,7 @@ for(var i = 0; i < shoppingItems.length; i++) {
 // Add item(s) to the shopping cart
 for(var j = 0; j < images.length; j++) {
   images[j].addEventListener('click', function(){
-    var newLine = document.createElement('p')
+    var newLine = document.createElement('p');
     newLine.innerText = event.currentTarget.id;
     cart.append(newLine);
   });
@@ -47,7 +47,7 @@ for(var j = 0; j < images.length; j++) {
 
 // Delete Items
 deleteItems.addEventListener('click', function(){
-    cart.remove(cart.innerText);
+  cart.innerText = ""
 });
 
 
