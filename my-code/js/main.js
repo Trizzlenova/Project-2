@@ -1,6 +1,50 @@
-// ambient store music
+// ambient store music:
+var audio = new Audio('audio/market.mp3');
 
-// mouseenter on each category which
-// will display that list/img (forlo?)
+// Empty Shopping Cart
+var shoppingCart = [];
 
-//drag img element into shopping cart
+// Grabbing all the Elements:
+var cart = document.getElementById('cart');
+    fruit = document.getElementById('fruit'),
+    fruitContainer = document.getElementById('fruitContainer'),
+    veggies = document.getElementById('veggies'),
+    veggieContainer = document.getElementById('veggieContainer'),
+    meat = document.getElementById('meat'),
+    meatContainer = document.getElementById('meatContainer'),
+    images = document.getElementsByTagName('img');
+
+var shoppingItems = [fruit, veggies, meat];
+
+
+// Show and Hide Category Displays
+for(var i = 0; i < shoppingItems.length; i++) {
+  shoppingItems[i].addEventListener('mouseenter', function(){
+    if(event.currentTarget === meat) {
+      meatContainer.style.display = 'block';
+      fruitContainer.style.display = 'none';
+      veggieContainer.style.display = 'none';
+    } else if(event.currentTarget === veggies){
+      veggieContainer.style.display = 'block'
+      fruitContainer.style.display = 'none';
+      meatContainer.style.display = 'none';
+    } else {
+      fruitContainer.style.display = 'block';
+      veggieContainer.style.display = 'none';
+      meatContainer.style.display = 'none';
+    }
+  });
+}
+
+// Add item(s) to the shopping cart
+function addToCart(list){
+  for(var j = 0; j < images.length; j++) {
+    images[j].addEventListener('click', function(){
+      list.push(event.currentTarget.id);
+    });
+
+  }
+
+cart.innerHTML = shoppingCart;
+
+
