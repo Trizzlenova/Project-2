@@ -17,12 +17,19 @@ body {
   font-family: 'Concert One';
 }
 
-h2 {
+#shop h2 {
   font-size: 4em;
+  color: #f9b0b4;
+}
+
+#list h2 {
+  font-size: 4em;
+  color: #caf1f2;
 }
 
 p {
   font-size: 2em;
+  color: #caf1f2;
 }
 
 #shop, #list {
@@ -70,23 +77,24 @@ ul {
 }
 
 li {
-  padding: 1em 3em 1em 3.5em;
+  padding: 1em 3em 1em 0em;
   font-size: 1.5em;
+  width: 100%;
 }
 
 a {
   text-decoration: none;
-  color: black;
+  color: #f9b0b4;
   width: 20%;
   font-size: 1em;
 }
 
 a:hover {
   font-size: 1.6em;
-  color: red;
+  color: #f6f0af;
 }
 
-/*FRUIT*/
+/* CATEGORIES */
 
 #veggieContainer, #meatContainer {
   display: none;
@@ -132,6 +140,14 @@ h4 {
 /* CART */
 aside {
   text-align: center;
+  padding-bottom: 1em;
+}
+
+button {
+  color: red;
+  background-color: #aff6ed;
+  font-family: 'Concert One';
+  font-size: 1em;
 }
 
 

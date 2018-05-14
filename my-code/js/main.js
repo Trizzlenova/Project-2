@@ -1,11 +1,5 @@
 // // ambient store music:
-// var audio = new Audio('audio/market.mp3');
-// window.onload = function(){
-//   document.getElementById('playAudio').play();
-// }
-
-// Empty Shopping Cart
-var shoppingCart = [];
+var audio = new Audio('audio/market.mp3');
 
 // Grabbing all the Elements:
 var cart = document.getElementById('cart');
@@ -15,6 +9,7 @@ var cart = document.getElementById('cart');
     veggieContainer = document.getElementById('veggieContainer'),
     meat = document.getElementById('meat'),
     meatContainer = document.getElementById('meatContainer'),
+    deleteItems = document.getElementById('deleteItems'),
     images = document.getElementsByTagName('img'),
     ul = document.createElement('ul');
 
@@ -46,15 +41,14 @@ for(var j = 0; j < images.length; j++) {
   images[j].addEventListener('click', function(){
     var newLine = document.createElement('p')
     newLine.innerText = event.currentTarget.id;
-    cart.append(newLine)
+    cart.append(newLine);
   });
 }
 
-
-
-
-
-
+// Delete Items
+deleteItems.addEventListener('click', function(){
+    cart.remove(cart.innerText);
+});
 
 
 
