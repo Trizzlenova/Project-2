@@ -1,6 +1,7 @@
 // // ambient store music:
 // var audio = new Audio('audio/market.mp3');
 
+
 // Grabbing all the Elements:
 var cart = document.getElementById('cart');
     fruit = document.getElementById('fruit'),
@@ -13,10 +14,10 @@ var cart = document.getElementById('cart');
     images = document.getElementsByTagName('img'),
     ul = document.createElement('ul');
 
-var shoppingItems = [fruit, veggies, meat];
 
 
 // Show and Hide Category Displays
+var shoppingItems = [fruit, veggies, meat];
 for(var i = 0; i < shoppingItems.length; i++) {
   shoppingItems[i].addEventListener('mouseenter', function(){
     if(event.currentTarget === meat) {
@@ -47,22 +48,5 @@ for(var j = 0; j < images.length; j++) {
 
 // Delete Items
 deleteItems.addEventListener('click', function(){
-  cart.innerText = ""
+  cart.innerText = "";
 });
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
